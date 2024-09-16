@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rute agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="home">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="images/graph-line.png" alt="logo">
+                <h3>rute <span class="logo-highlight">digital marketing</span></h3>
+            </a>
+            <nav>
+                <div class="menu-icon" id="menu-icon">
+                    &#9776; <!-- hamburger icon -->
+                </div>
+                <ul class="nav-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- showcase section -->
+    <section id="showcase-container">
+        <div class="showcase">
+            <h1>Transform Your Online Presence</h1>
+            <p>Partner with us to elevate your digital marketing strategies and generate high-quality leads for your business.</p>
+            <button id="openFormBtn" class="cta-button">Get More Leads!</button>
+            <button class="cta-button">Our services</button>
+
+            <!-- form (initially hidden) -->
+            <div id="popupForm" class="form-popup">
+                <form id="pop-contact-form">
+                    <div class="input-group">
+                        <input class="input" required type="text" id="name">
+                        <label class="label" for="name">Full Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="input" required type="email" id="email">
+                        <label class="label" for="email">Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="input" required type="tel" id="phone" pattern="[0-9]{10}">
+                        <label class="label" for="phone">Phone number</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea class="input" name="message" id="message" style="height: 200px;" required></textarea>
+                        <label class="label" for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn" >Submit</button>
+                    <button type="button" class="btn cancel" id="closeFormBtn">Close</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about-container">
+        <!-- Brief Description Section -->
+        <div class="about-brief">
+            <h2>About Us</h2>
+            <p>
+                We are a dynamic digital marketing agency dedicated to helping businesses across various industries thrive online. 
+                Our mission is to elevate your brand's online presence through innovative strategies and targeted campaigns, 
+                ensuring you reach the right audience and achieve your business goals.
+            </p>
+        </div>
+    
+        <!-- Benefits Section -->
+        <div class="about-benefits">
+            <div class="benefit">
+                <img src="images/online-presence.png" alt="Increased Online Visibility">
+                <h3>Increased Online Visibility</h3>
+                <p>Enhance your brand's presence across various digital channels, ensuring your target audience can easily find and engage with your business.</p>
+            </div>
+            <div class="benefit">
+                <img src="images/target.png" alt="Targeted Audience Reach">
+                <h3>Targeted Audience Reach</h3>
+                <p>Reach your specific audience through data-driven campaigns, ensuring that your marketing efforts connect with the right people at the right time.</p>
+            </div>
+            <div class="benefit">
+                <img src="images/user-engagement.png" alt="Improved Lead Generation">
+                <h3>Improved Lead Generation</h3>
+                <p>Attract high-quality leads that are more likely to convert into customers, helping you grow your client base and drive business growth.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="service-container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card" style="background-image: url('images/web-dd.jpg');">
+                <div class="service-info">
+                    <h3>Web Design & Development</h3>
+                    <p>Creating stunning, responsive websites that drive business growth and ensure your online presence stands out in today’s digital world.</p>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('images/social-man.jpg');">
+                <div class="service-info">
+                    <h3>Social Media Management</h3>
+                    <p>Building and managing your online presence on social media platforms to engage your audience and enhance brand visibility.</p>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('images/target-ads.jpg');">
+                <div class="service-info">
+                    <h3>Targeted Ads</h3>
+                    <p>Driving traffic and conversions through data-driven advertising strategies to reach the right audience efficiently.</p>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('images/lead-gen.jpg');">
+                <div class="service-info">
+                    <h3>Lead Generation</h3>
+                    <p>Generating high-quality leads that are more likely to convert into loyal customers in today’s competitive market.</p>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('images/web-main.jpg');">
+                <div class="service-info">
+                    <h3>Website Maintenace</h3>
+                    <p>Ensuring your website runs smoothly with regular updates, backups, and performance checks to keep it secure and up-to-date.</p>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('images/email-marketing.jpg');">
+                <div class="service-info">
+                    <h3>E-mail Marketing</h3>
+                    <p>Crafting personalized email campaigns that engage your audience and drive conversions, helping you build lasting customer relationships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+<section id="contact-us">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <!-- Contact Info Items -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="images/mail.png" alt="Email Icon">
+                <p>Email: info@example.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="images/phone-call.png" alt="Phone Icon">
+                <p>Phone: +1234567890</p>
+            </div>
+            <div class="contact-item">
+                <img src="images/travel.png" alt="Location Icon">
+                <p>Location: 123 Main Street</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-container">
+            <h3>Send us a message</h3>
+            <form id="contact-form">
+                <div class="input-group">
+                    <input class="input" required type="text" id="name">
+                    <label class="label" for="name">Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input class="input" required type="email" id="email">
+                    <label class="label" for="email">Email Address</label>
+                </div>
+                <div class="input-group">
+                    <input class="input" required type="tel" id="phone" pattern="[0-9]{10}">
+                    <label class="label" for="phone">Phone Number</label>
+                </div>
+                <div class="input-group">
+                    <textarea class="input" name="message" id="message" style="height: 200px;" required></textarea>
+                    <label class="label" for="message">Message</label>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2024 rute digital marketing. All rights reserved</p>
+    </footer>
+</body>
+</html>
