@@ -23,3 +23,33 @@ window.onclick = function(event) {
         popupForm.style.display = "none";
     }
 }
+
+const carousel = document.querySelector('.carousel');
+const prevArrow = document.querySelector('.prev-arrow');
+const nextArrow = document.querySelector('.next-arrow');
+let currentIndex = 0;
+
+prevArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : carousel.children.length - 1;
+    updateCarousel();
+});
+
+nextArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex < carousel.children.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    const itemWidth = carousel.children[0].offsetWidth + 20; // Add gap
+    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+// Select the elements
+const menuIcon = document.getElementById('menu-icon');
+const navItems = document.querySelector('.nav-items');
+
+// Add a click event listener to the menu icon
+menuIcon.addEventListener('click', () => {
+    // Toggle the 'active' class on the nav-items
+    navItems.classList.toggle('active');
+});

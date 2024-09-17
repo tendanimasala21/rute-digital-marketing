@@ -12,7 +12,7 @@
         <div class="nav-container">
             <a href="#home" class="logo">
                 <img src="images/graph-line.png" alt="logo">
-                <h3>rute <span class="logo-highlight">digital marketing</span></h3>
+                <h3>rute <span class="logo-highlight">digital agency</span></h3>
             </a>
             <nav>
                 <div class="menu-icon" id="menu-icon">
@@ -34,7 +34,7 @@
             <h1>Transform Your Online Presence</h1>
             <p>Partner with us to elevate your digital marketing strategies and generate high-quality leads for your business.</p>
             <button id="openFormBtn" class="cta-button">Get More Leads!</button>
-            <button class="cta-button">Our services</button>
+            <button onclick="location.href='#services'" class="cta-button">Our Services</button>
 
             <!-- form (initially hidden) -->
             <div id="popupForm" class="form-popup">
@@ -137,56 +137,78 @@
         </div>
     </section>
 
+    <!-- projects section -->
+    <section id="our-projects">
+        <h2>Our Projects</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Example of a company logo with a link -->
+                <a href="https://company1.com" target="_blank" class="carousel-item">
+                    <img src="images/company1-logo.png" alt="Company 1">
+                </a>
+                <a href="https://company2.com" target="_blank" class="carousel-item">
+                    <img src="images/company2-logo.png" alt="Company 2">
+                </a>
+                <a href="https://company3.com" target="_blank" class="carousel-item">
+                    <img src="images/company3-logo.png" alt="Company 3">
+                </a>
+                <!-- Add more company logos here -->
+            </div>
+            <!-- Arrows for navigation -->
+            <button class="prev-arrow">&#10094;</button>
+            <button class="next-arrow">&#10095;</button>
+        </div>
+    </section>
+    
     <!-- contact section -->
-<section id="contact-us">
-    <h2>Contact Us</h2>
-    <div class="contact-container">
-        <!-- Contact Info Items -->
-        <div class="contact-info">
-            <div class="contact-item">
-                <img src="images/mail.png" alt="Email Icon">
-                <p>Email: info@example.com</p>
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <!-- Contact Info Items -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="images/mail.png" alt="Email Icon">
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <img src="images/phone-call.png" alt="Phone Icon">
+                    <p>Phone: +1234567890</p>
+                </div>
+                <div class="contact-item">
+                    <img src="images/travel.png" alt="Location Icon">
+                    <p>Location: 123 Main Street</p>
+                </div>
             </div>
-            <div class="contact-item">
-                <img src="images/phone-call.png" alt="Phone Icon">
-                <p>Phone: +1234567890</p>
-            </div>
-            <div class="contact-item">
-                <img src="images/travel.png" alt="Location Icon">
-                <p>Location: 123 Main Street</p>
+
+            <!-- Contact Form -->
+            <div class="form-container">
+                <h3>Send us a message</h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input class="input" required type="text" id="name">
+                        <label class="label" for="name">Full Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="input" required type="email" id="email">
+                        <label class="label" for="email">Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="input" required type="tel" id="phone" pattern="[0-9]{10}">
+                        <label class="label" for="phone">Phone Number</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea class="input" name="message" id="message" style="height: 200px;" required></textarea>
+                        <label class="label" for="message">Message</label>
+                    </div>
+                    <button type="submit" class="button">Submit</button>
+                </form>
             </div>
         </div>
-
-        <!-- Contact Form -->
-        <div class="form-container">
-            <h3>Send us a message</h3>
-            <form id="contact-form">
-                <div class="input-group">
-                    <input class="input" required type="text" id="name">
-                    <label class="label" for="name">Full Name</label>
-                </div>
-                <div class="input-group">
-                    <input class="input" required type="email" id="email">
-                    <label class="label" for="email">Email Address</label>
-                </div>
-                <div class="input-group">
-                    <input class="input" required type="tel" id="phone" pattern="[0-9]{10}">
-                    <label class="label" for="phone">Phone Number</label>
-                </div>
-                <div class="input-group">
-                    <textarea class="input" name="message" id="message" style="height: 200px;" required></textarea>
-                    <label class="label" for="message">Message</label>
-                </div>
-                <button type="submit" class="button">Submit</button>
-            </form>
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- footer section -->
     <footer>
-        <p>&copy; 2024 rute digital marketing. All rights reserved</p>
+        <p>&copy; 2024 rute digital agency. All rights reserved</p>
     </footer>
 </body>
 </html>
